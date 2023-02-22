@@ -1,13 +1,15 @@
-# Java Template
+# Java Methods
 
 ## Learning Objectives
-- Example learning objective
+- Create and use methods to perform simple logic
+- Use inputs to produce specific outputs
 
 ## Set up instructions
 - Fork this repository and clone the forked version to your machine
 - Open the root directory of the project in IntelliJ
 - Implement the requirements listed in comments in the `./src/main/java/com.booleanuk/core/Exercise.java` file
 - When ready to test your solution, open the `./src/test/java/com.booleanuk/core/ExerciseTest.java` file and click a "Run Test" button. You can either run the entire test suite via figure 1 in the screenshot below, or run a specific test via figure 2.
+- If you complete the core criteria with time to spare, there are extensions in the `./src/main/java/com.booleanuk/extension/Extension.java` file with tests in the `./src/test/java/com.booleanuk/extension/ExtensionTest.java` file.
 
 ![](./assets/run-a-test.PNG)
 
