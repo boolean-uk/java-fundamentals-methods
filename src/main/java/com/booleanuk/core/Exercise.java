@@ -1,6 +1,8 @@
 package com.booleanuk.core;
 
-public class Exercise {
+import com.booleanuk.helpers.ExerciseBase;
+
+public class Exercise extends ExerciseBase {
     /*
         A method is a function, a single piece of logic that can run. In Java, a class is a convenient
         encapsulation of related state and behaviour; members contain state (values like ints, strings, etc.),
@@ -30,15 +32,15 @@ public class Exercise {
 
     /*
         1. Increment a number
-        Complete this method so that it increases the number given by 1 and outputs the result
+        Complete this method so that it increases the number given by 1 and returns the result
      */
     public int increment(int number) {
-
+        return 0;
     }
 
     /*
         2. Construct a friendly greeting
-        Complete this method so that it accepts a name as an input and outputs a friendly greeting
+        Complete this method so that it accepts a name as an input and returns a friendly greeting
         with a smiley face. Example input and output:
 
         Input  | Output
@@ -47,7 +49,7 @@ public class Exercise {
         Edward | Hi, Edward :)
      */
     public String happilyGreet() {
-
+        return "Not implemented yet";
     }
 
     /*

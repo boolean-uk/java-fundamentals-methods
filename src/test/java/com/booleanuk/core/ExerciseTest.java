@@ -44,30 +44,5 @@ class ExerciseTest {
         Assertions.assertEquals("ERROR!!!!!!!!!!", this.exercise.shout("error", 10));
     }
 
-    @Test
-    public void bakingTime() {
-        Assertions.assertEquals(50, this.exercise.bakingTime());
-    }
 
-    @Test
-    public void remainingBakeTime() {
-        Assertions.assertEquals(30, this.exercise.remainingBakeTime(20));
-        Assertions.assertEquals(40, this.exercise.remainingBakeTime(10));
-        Assertions.assertEquals(0, this.exercise.remainingBakeTime(50));
-    }
-
-    @Test
-    public void calculatePrepTime() {
-        Assertions.assertEquals(6, this.exercise.calculatePrepTime(2));
-        Assertions.assertEquals(9, this.exercise.calculatePrepTime(3));
-        Assertions.assertEquals(3, this.exercise.calculatePrepTime(1));
-    }
-
-    @Test
-    public void totalTimeSpent() {
-        Assertions.assertEquals(26, this.exercise.totalTimeSpent(2, 20));
-        Assertions.assertEquals(49, this.exercise.totalTimeSpent(3, 40));
-        Assertions.assertEquals(15, this.exercise.totalTimeSpent(0, 15));
-        Assertions.assertEquals(0, this.exercise.totalTimeSpent(0, 0));
-    }
 }
