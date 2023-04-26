@@ -35,7 +35,7 @@ public class Exercise extends ExerciseBase {
         Complete this method so that it increases the number given by 1 and returns the result
      */
     public int increment(int number) {
-        return 0;
+        return number + 1;
     }
 
     /*
@@ -48,8 +48,10 @@ public class Exercise extends ExerciseBase {
         Nathan | Hi, Nathan :)
         Edward | Hi, Edward :)
      */
-    public String happilyGreet() {
-        return "Not implemented yet";
+    // same as in previous one, first name what type it is (number(int) or a string (String)) than the name of the variable
+    public String happilyGreet(String name) {
+        String greet = "Hi, " + name + " :)";
+         return greet;
     }
 
     /*
