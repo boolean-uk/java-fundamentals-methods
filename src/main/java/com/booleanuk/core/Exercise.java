@@ -91,7 +91,7 @@ public class Exercise extends ExerciseBase {
     public String shout(String message, int count){
         StringBuilder sb = new StringBuilder();
         sb.append(message.toUpperCase());
-        for(int i=0; i < count; i++) sb.append('!');
+        sb.append("!".repeat(count));
 
         return sb.toString();
     }
