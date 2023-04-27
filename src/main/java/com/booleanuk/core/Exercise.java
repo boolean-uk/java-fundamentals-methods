@@ -64,7 +64,14 @@ public class Exercise extends ExerciseBase {
         10, 13 | [10,11,12,13]
         -1, 1  | [-1,0,1]
      */
-
+    public int[] constructNumberArray(int lower, int upper){
+        int arraylength = upper - lower + 1;
+        int array[] = new int[arraylength];
+        for(int i = 0; i < arraylength; i++){
+            array[i] = lower+i;
+        }
+        return array;
+    }
 
 
 
@@ -81,6 +88,13 @@ public class Exercise extends ExerciseBase {
         error, 10   | ERROR!!!!!!!!!!
      */
 
+    public String shout(String message, int count){
+        StringBuilder sb = new StringBuilder();
+        sb.append(message.toUpperCase());
+        for(int i=0; i < count; i++) sb.append('!');
+
+        return sb.toString();
+    }
 
 
 
