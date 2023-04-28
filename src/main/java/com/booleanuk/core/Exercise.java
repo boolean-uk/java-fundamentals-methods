@@ -37,6 +37,7 @@ public class Exercise extends ExerciseBase {
     public int increment(int number) {
         return number + 1;
     }
+    System.out.println("Test check");
 
     /*
         2. Construct a friendly greeting
