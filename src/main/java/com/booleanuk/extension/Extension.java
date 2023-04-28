@@ -4,6 +4,7 @@ import com.booleanuk.helpers.ExtensionBase;
 
 public class Extension extends ExtensionBase {
     // Let's make a cake!
+    //Mandatory comment to make everything work as intended :)
 
     /*
         5. Create a method named bakingTime that returns the number 50
