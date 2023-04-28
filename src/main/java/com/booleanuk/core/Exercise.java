@@ -70,6 +70,7 @@ public class Exercise extends ExerciseBase {
         for(int i = 0; i < arraylength; i++){
             array[i] = lower+i;
         }
+
         return array;
     }
 
