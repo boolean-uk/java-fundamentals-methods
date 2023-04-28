@@ -3,7 +3,7 @@ package com.booleanuk.core;
 import com.booleanuk.helpers.ExerciseBase;
 
 import java.util.Arrays;
-
+//comment
 public class Exercise extends ExerciseBase {
     /*
         A method is a function, a single piece of logic that can run. In Java, a class is a convenient
