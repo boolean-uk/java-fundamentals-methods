@@ -53,6 +53,7 @@ public class Extension extends ExtensionBase {
      */
     public int totalTimeSpent(int layers, int done) {
         int prepTime = calculatePrepTime(layers);
+        //THis is a new Line
         return (prepTime+done);
     }
 
