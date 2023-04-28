@@ -88,6 +88,7 @@ public class Exercise extends ExerciseBase {
         disaster, 5 | DISASTER!!!!!
         error, 10   | ERROR!!!!!!!!!!
      */
+    
     public String shout(String string, int number) {
         string = string.toUpperCase();
         for (int i=0; i< number; i++) {
