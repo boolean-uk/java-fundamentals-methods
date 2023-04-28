@@ -23,6 +23,7 @@ public class Exercise extends ExerciseBase {
      */
 
     /*
+        _
         0. Example requirement
         Create a method that accepts a name and returns a greeting
      */
