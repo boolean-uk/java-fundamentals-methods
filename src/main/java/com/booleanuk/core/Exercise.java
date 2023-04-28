@@ -73,7 +73,6 @@ public class Exercise extends ExerciseBase {
     }
 
 
-
     /*
         4. Shout at a dev
         Create a method named shout that accepts a string and a whole number.
