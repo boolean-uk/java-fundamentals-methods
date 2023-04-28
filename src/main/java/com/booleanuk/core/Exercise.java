@@ -32,7 +32,7 @@ public class Exercise extends ExerciseBase {
 
     /*
         1. Increment a number
-        Complete this method so that it increases the number given by 1 and returns the result
+        Complete this method so that it increases the number given by 1 and returns the result.
      */
     public int increment(int number) {
         return number + 1;
