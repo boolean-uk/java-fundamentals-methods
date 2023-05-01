@@ -90,15 +90,16 @@ public class Exercise extends ExerciseBase {
         error, 10   | ERROR!!!!!!!!!!
      */
 
-    public StringBuilder Shout(String name, int number) {
+    public String shout(String name, int number) {
         String newName = name.toUpperCase();
-        StringBuilder nameExclamation = new StringBuilder();
-        nameExclamation.append(name);
+        //
 
-        for(int i=name.length(); i<= (nameExclamation.length() + name.length() - 1) ; i++){
-            nameExclamation.append('!');
+        for(int i=1; i<= number ; i++){
+           newName += '!';
         }
-        return nameExclamation;
+       // String convertName= nameExclamation;
+
+        return newName;
 
     }
 
