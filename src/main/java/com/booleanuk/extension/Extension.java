@@ -35,6 +35,9 @@ public class Extension extends ExtensionBase {
         each layer taking 3 minutes to prepare
      */
 
+        public int calculatePrepTime(int nrOfLayers) {
+            return nrOfLayers * 3;
+        }
 
 
 
@@ -48,7 +51,9 @@ public class Extension extends ExtensionBase {
         in the oven. Use your calculatePrepTime method in the calculation
      */
 
-
+        public int totalTimeSpent(int nrOfLayers, int nrOfMinutes) {
+            return calculatePrepTime(nrOfLayers) + bakingTime() - remainingBakeTime(nrOfMinutes);
+        }
 
 
 }
