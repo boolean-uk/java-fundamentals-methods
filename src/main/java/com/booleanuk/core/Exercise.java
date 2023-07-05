@@ -48,8 +48,8 @@ public class Exercise extends ExerciseBase {
         Nathan | Hi, Nathan :)
         Edward | Hi, Edward :)
      */
-    public String happilyGreet() {
-        return "Not implemented yet";
+    public String happilyGreet(String name) {
+        return "Hi, " + name + " :)";
     }
 
     /*
@@ -89,7 +89,7 @@ public class Exercise extends ExerciseBase {
         error, 10   | ERROR!!!!!!!!!!
      */
 
-
-
-
+    public String shout(String word, int exclamations) {
+        return word.toUpperCase() + "!".repeat(exclamations);
+    }
 }
