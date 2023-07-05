@@ -9,6 +9,10 @@ public class Extension extends ExtensionBase {
      * 5. Create a method named bakingTime that returns the number 50
      */
 
+    public int bakingTime() {
+        return 50;
+    }
+
     /*
      * 6. Create a method named remainingBakeTime that accepts one input:
      * - the number of minutes the cake has been in the oven
@@ -24,6 +28,10 @@ public class Extension extends ExtensionBase {
      * It must return how many minutes it will take to prepare the cake based on
      * each layer taking 3 minutes to prepare
      */
+
+    public int calculatePrepTime(int layers) {
+        return layers * 3;
+    }
 
     /*
      * 8. Create a method named totalTimeSpent that accepts two inputs in this
