@@ -50,5 +50,9 @@ public class Extension extends ExtensionBase {
         in the oven. Use your calculatePrepTime method in the calculation
      */
 
+    public int totalTimeSpent(int layers, int done) {
+        return calculatePrepTime(layers) + done;
+    }
+
 
 }
