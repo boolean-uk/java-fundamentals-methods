@@ -39,8 +39,10 @@ public class Extension extends ExtensionBase {
         each layer taking 3 minutes to prepare
      */
 
-
-
+    @Override
+    public int calculatePrepTime(int layers) {
+        return layers * 3;
+    }
 
     /*
         8. Create a method named totalTimeSpent that accepts two inputs in this order:
@@ -52,7 +54,8 @@ public class Extension extends ExtensionBase {
         in the oven. Use your calculatePrepTime method in the calculation
      */
 
-
-
-
+    @Override
+    public int totalTimeSpent(int layers, int done) {
+        return done + calculatePrepTime(layers);
+    }
 }
