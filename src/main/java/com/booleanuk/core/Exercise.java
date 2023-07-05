@@ -89,5 +89,9 @@ public class Exercise extends ExerciseBase {
         error, 10   | ERROR!!!!!!!!!!
      */
 
+    public String shout(String string, int number) {
+        String result = string.toUpperCase() + "!".repeat(number);
+        return result;
+    }
 
 }
