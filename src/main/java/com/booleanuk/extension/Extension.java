@@ -9,6 +9,10 @@ public class Extension extends ExtensionBase {
         5. Create a method named bakingTime that returns the number 50
      */
 
+    public int bakingTime(){
+        return 50;
+    }
+
 
 
 
@@ -19,6 +23,10 @@ public class Extension extends ExtensionBase {
         It must return how many minutes are left to bake based on the input
         and the result of calling the bakingTime method
      */
+
+    public int remainingBakeTime(int minutesInOven){
+        return bakingTime() - minutesInOven;
+    }
 
 
 
