@@ -69,7 +69,8 @@ public class Exercise extends ExerciseBase {
         int [] newArray = new int[arraySize];
 
         for (int i = 0; i < arraySize; i++){
-            newArray[i] = lower + i;
+            newArray[i] = lower;
+            lower += 1;
         }
         return newArray;
     }
