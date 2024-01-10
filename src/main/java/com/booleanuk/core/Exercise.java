@@ -35,7 +35,8 @@ public class Exercise extends ExerciseBase {
         Complete this method so that it increases the number given by 1 and returns the result
      */
     public int increment(int number) {
-        return 0;
+        number++;
+        return number;
     }
 
     /*
@@ -48,8 +49,18 @@ public class Exercise extends ExerciseBase {
         Nathan | Hi, Nathan :)
         Edward | Hi, Edward :)
      */
-    public String happilyGreet() {
-        return "Not implemented yet";
+    public String happilyGreet(String name) {
+        return "Hi, " + name + " :)";
+    }
+
+    public int[] constructNumberArray(int lower, int upper) {
+        int[] array = new int[upper-lower+1];
+        int number = lower;
+        for(int i = 0; i < array.length; i++) {
+            array[i] = number;
+            number++;
+        }
+        return array;
     }
 
     /*
@@ -67,7 +78,9 @@ public class Exercise extends ExerciseBase {
 
 
 
-
+    public String shout(String text, int exclamationCounter) {
+        return text.toUpperCase() + "!".repeat(exclamationCounter);
+    }
     /*
         4. Shout at a dev
         Create a method named shout that accepts a string and a whole number.
