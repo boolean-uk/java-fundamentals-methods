@@ -66,7 +66,7 @@ public class Exercise extends ExerciseBase {
      */
     public int[] constructNumberArray(int lower, int upper) {
         int index = 0;
-        int[] tmp = new int[Math.abs(lower) - Math.abs(upper) + 1];
+        int[] tmp = new int[Math.abs(lower-upper) + 1];
         for (int i = lower; i <= upper; i++) {
             tmp[index] = i;
             index++;
