@@ -2,6 +2,8 @@ package com.booleanuk.core;
 
 import com.booleanuk.helpers.ExerciseBase;
 
+import java.util.stream.IntStream;
+
 public class Exercise extends ExerciseBase {
     /*
         A method is a function, a single piece of logic that can run. In Java, a class is a convenient
@@ -26,16 +28,15 @@ public class Exercise extends ExerciseBase {
         0. Example requirement
         Create a method that accepts a name and returns a greeting
      */
-    public String greet(String name) {
-        return "Hello " + name + "!";
-    }
+    public String greet(String name) { return "Hello " + name + "!";}
 
     /*
         1. Increment a number
         Complete this method so that it increases the number given by 1 and returns the result
      */
     public int increment(int number) {
-        return 0;
+        number++;
+        return number;
     }
 
     /*
@@ -48,8 +49,9 @@ public class Exercise extends ExerciseBase {
         Nathan | Hi, Nathan :)
         Edward | Hi, Edward :)
      */
-    public String happilyGreet() {
-        return "Not implemented yet";
+    public String happilyGreet(String name) {
+
+        return "Hi, "+name+" :)";
     }
 
     /*
@@ -65,6 +67,15 @@ public class Exercise extends ExerciseBase {
         -1, 1  | [-1,0,1]
      */
 
+    public int[] constructNumberArray(int lower, int upper) {
+        int length= upper-lower+1;
+        int[] numbers= new int[length];
+        for (int i=0; upper>=lower; i++){
+            numbers[i]=lower;
+            lower++;
+        }
+        return numbers;
+    }
 
 
 
@@ -80,7 +91,14 @@ public class Exercise extends ExerciseBase {
         disaster, 5 | DISASTER!!!!!
         error, 10   | ERROR!!!!!!!!!!
      */
-
+    public String shout(String str,int number) {
+        String add="";
+        for (int i=0; i<number; i++){
+            add=add+"!";
+        }
+        str=str.toUpperCase();
+        return str+add;
+    }
 
 
 
