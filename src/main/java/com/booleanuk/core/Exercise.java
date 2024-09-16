@@ -2,6 +2,8 @@ package com.booleanuk.core;
 
 import com.booleanuk.helpers.ExerciseBase;
 
+import java.util.Scanner;
+
 public class Exercise extends ExerciseBase {
     /*
         A method is a function, a single piece of logic that can run. In Java, a class is a convenient
@@ -35,7 +37,7 @@ public class Exercise extends ExerciseBase {
         Complete this method so that it increases the number given by 1 and returns the result
      */
     public int increment(int number) {
-        return 0;
+        return number + 1;
     }
 
     /*
@@ -48,8 +50,14 @@ public class Exercise extends ExerciseBase {
         Nathan | Hi, Nathan :)
         Edward | Hi, Edward :)
      */
-    public String happilyGreet() {
-        return "Not implemented yet";
+    public String happilyGreet(String input) {
+
+
+        String greeting = "Hi, " + input + " :)";
+
+
+
+        return greeting;
     }
 
     /*
@@ -58,6 +66,8 @@ public class Exercise extends ExerciseBase {
         The method must return an array containing all the whole numbers between lower and upper,
         including lower and upper. Example input and output:
 
+
+
         Input  | Output
         -------|-------
         1, 3   | [1,2,3]
@@ -65,6 +75,16 @@ public class Exercise extends ExerciseBase {
         -1, 1  | [-1,0,1]
      */
 
+    public int[] constructNumberArray(int lower, int upper) {
+        int diff = upper - lower + 1;
+        int[] result = new int[diff];
+
+        for (int i = 0; i < diff; i++) {
+            result[i] = lower + i;
+        }
+
+        return result;
+    }
 
 
 
@@ -80,6 +100,20 @@ public class Exercise extends ExerciseBase {
         disaster, 5 | DISASTER!!!!!
         error, 10   | ERROR!!!!!!!!!!
      */
+    public String shout(String text, int number) {
+        StringBuilder sb = new StringBuilder();
+
+
+        String marks = "!";
+        for (int i = 0; i < number - 1; i++) {
+
+            marks = marks + "!";
+        }
+        sb.append(text.toUpperCase() + marks);
+
+        String finalText = sb.toString();
+        return finalText;
+    }
 
 
 
