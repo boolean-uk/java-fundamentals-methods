@@ -2,6 +2,8 @@ package com.booleanuk.core;
 
 import com.booleanuk.helpers.ExerciseBase;
 
+import java.util.Arrays;
+
 public class Exercise extends ExerciseBase {
     /*
         A method is a function, a single piece of logic that can run. In Java, a class is a convenient
@@ -35,7 +37,8 @@ public class Exercise extends ExerciseBase {
         Complete this method so that it increases the number given by 1 and returns the result
      */
     public int increment(int number) {
-        return 0;
+        number += 1;
+        return number;
     }
 
     /*
@@ -43,13 +46,16 @@ public class Exercise extends ExerciseBase {
         Complete this method so that it accepts a name as an input and returns a friendly greeting
         with a smiley face. Example input and output:
 
+
+
         Input  | Output
         -------|-------
         Nathan | Hi, Nathan :)
         Edward | Hi, Edward :)
      */
-    public String happilyGreet() {
-        return "Not implemented yet";
+    public String happilyGreet(String name) {
+        String output = "Hi, " + name + " :)";
+        return output;
     }
 
     /*
@@ -64,6 +70,18 @@ public class Exercise extends ExerciseBase {
         10, 13 | [10,11,12,13]
         -1, 1  | [-1,0,1]
      */
+        public int[] constructNumberArray(int lower, int upper) {
+            int[] output = new int[(upper - lower) + 1];
+            int index = 0;
+
+            for(int i = lower; i <= upper; i++) {
+                output[index] = i;
+                index++;
+            }
+
+            return output;
+
+        }
 
 
 
@@ -80,6 +98,9 @@ public class Exercise extends ExerciseBase {
         disaster, 5 | DISASTER!!!!!
         error, 10   | ERROR!!!!!!!!!!
      */
+        public String shout (String word, int num) {
+            return word.toUpperCase() + "!".repeat(num);
+        }
 
 
 
