@@ -35,7 +35,7 @@ public class Exercise extends ExerciseBase {
         Complete this method so that it increases the number given by 1 and returns the result
      */
     public int increment(int number) {
-        return 0;
+        return ++number;
     }
 
     /*
@@ -48,8 +48,8 @@ public class Exercise extends ExerciseBase {
         Nathan | Hi, Nathan :)
         Edward | Hi, Edward :)
      */
-    public String happilyGreet() {
-        return "Not implemented yet";
+    public String happilyGreet(String name) {
+        return "Hi, " + name + " :)";
     }
 
     /*
@@ -65,10 +65,18 @@ public class Exercise extends ExerciseBase {
         -1, 1  | [-1,0,1]
      */
 
-
-
-
-    /*
+    @Override
+    public int[] constructNumberArray(int lower, int upper) {
+        int[] result = new int[upper-lower+1];
+        int i =0;
+        while(lower<=upper){
+            result[i]=lower;
+            lower++;
+            i++;
+        }
+        return result;
+    }
+        /*
         4. Shout at a dev
         Create a method named shout that accepts a string and a whole number.
         The method must return the same string in upper case with exclamation marks (!) appended to the end.
@@ -81,7 +89,7 @@ public class Exercise extends ExerciseBase {
         error, 10   | ERROR!!!!!!!!!!
      */
 
-
-
-
+    public String shout(String word, int exclamations) {
+        return word.toUpperCase() + "!".repeat(exclamations);
+    }
 }
