@@ -35,7 +35,7 @@ public class Exercise extends ExerciseBase {
         Complete this method so that it increases the number given by 1 and returns the result
      */
     public int increment(int number) {
-        return 0;
+        return ++number;
     }
 
     /*
@@ -48,8 +48,8 @@ public class Exercise extends ExerciseBase {
         Nathan | Hi, Nathan :)
         Edward | Hi, Edward :)
      */
-    public String happilyGreet() {
-        return "Not implemented yet";
+    public String happilyGreet(String name) {
+        return "Hi, "+name+" :)";
     }
 
     /*
@@ -64,7 +64,13 @@ public class Exercise extends ExerciseBase {
         10, 13 | [10,11,12,13]
         -1, 1  | [-1,0,1]
      */
-
+    public int[] constructNumberArray(int a,int b){
+        int [] array = new int[b-a+1];
+        for (int i =0; i<=b-a;i++){
+            array[i]=a+i;
+        }
+        return array;
+    }
 
 
 
@@ -80,7 +86,14 @@ public class Exercise extends ExerciseBase {
         disaster, 5 | DISASTER!!!!!
         error, 10   | ERROR!!!!!!!!!!
      */
-
+public String shout (String text, int number){
+    StringBuilder sb = new StringBuilder();
+    sb.append(text.toUpperCase());
+    for (int i =0; i<number;i++){
+        sb.append("!");
+    }
+    return sb.toString();
+}
 
 
 
