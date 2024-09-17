@@ -26,6 +26,8 @@ public class Exercise extends ExerciseBase {
         0. Example requirement
         Create a method that accepts a name and returns a greeting
      */
+
+    //pull request change
     public String greet(String name) {
         return "Hello " + name + "!";
     }
@@ -35,7 +37,7 @@ public class Exercise extends ExerciseBase {
         Complete this method so that it increases the number given by 1 and returns the result
      */
     public int increment(int number) {
-        return 0;
+        return number = number +1;
     }
 
     /*
@@ -48,8 +50,8 @@ public class Exercise extends ExerciseBase {
         Nathan | Hi, Nathan :)
         Edward | Hi, Edward :)
      */
-    public String happilyGreet() {
-        return "Not implemented yet";
+    public String happilyGreet(String name) {
+        return "Hi, " + name +" :)";
     }
 
     /*
@@ -64,7 +66,14 @@ public class Exercise extends ExerciseBase {
         10, 13 | [10,11,12,13]
         -1, 1  | [-1,0,1]
      */
-
+    public int[] constructNumberArray(int lower, int upper){
+        int arraylength = upper - lower + 1;
+        int array[] = new int[arraylength];
+        for(int i = 0; i < arraylength; i++){
+            array[i] = lower+i;
+        }
+        return array;
+    }
 
 
 
@@ -81,6 +90,13 @@ public class Exercise extends ExerciseBase {
         error, 10   | ERROR!!!!!!!!!!
      */
 
+    public String shout(String message, int count){
+        StringBuilder sb = new StringBuilder();
+        sb.append(message.toUpperCase());
+        for(int i=0; i < count; i++) sb.append('!');
+
+        return sb.toString();
+    }
 
 
 
