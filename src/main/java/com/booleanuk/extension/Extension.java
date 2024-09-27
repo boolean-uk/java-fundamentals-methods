@@ -9,7 +9,10 @@ public class Extension extends ExtensionBase {
         5. Create a method named bakingTime that returns the number 50
      */
 
-
+    public int bakingTime(){
+        int time = 50;
+        return time;
+    }
 
 
     /*
@@ -19,7 +22,12 @@ public class Extension extends ExtensionBase {
         It must return how many minutes are left to bake based on the input
         and the result of calling the bakingTime method
      */
-
+    public int remainingBakeTime(int minutes){
+        Extension extension = new Extension();
+        int total = extension.bakingTime();
+        int remaining = total-minutes;
+        return remaining;
+    }
 
 
 
@@ -30,7 +38,10 @@ public class Extension extends ExtensionBase {
         It must return how many minutes it will take to prepare the cake based on
         each layer taking 3 minutes to prepare
      */
-
+    public int calculatePrepTime(int number){
+        int total = number*3;
+        return total;
+    }
 
 
 
@@ -44,7 +55,11 @@ public class Extension extends ExtensionBase {
         in the oven. Use your calculatePrepTime method in the calculation
      */
 
-
+    public int totalTimeSpent(int layer,int minutes){
+        Extension extension = new Extension();
+        int sum = extension.calculatePrepTime(layer) + minutes;
+        return sum;
+    }
 
 
 }
