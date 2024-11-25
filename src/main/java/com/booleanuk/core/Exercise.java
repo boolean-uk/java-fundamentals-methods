@@ -35,7 +35,8 @@ public class Exercise extends ExerciseBase {
         Complete this method so that it increases the number given by 1 and returns the result
      */
     public int increment(int number) {
-        return 0;
+        number +=1;
+        return number;
     }
 
     /*
@@ -48,27 +49,42 @@ public class Exercise extends ExerciseBase {
         Nathan | Hi, Nathan :)
         Edward | Hi, Edward :)
      */
-    public String happilyGreet() {
-        return "Not implemented yet";
+
+    public String happilyGreet(String name) {
+        return "Hi, " + name + " :)";
     }
 
-    /*
-        3. Construct an array of numbers
-        Create a method named constructNumberArray that accepts two whole numbers named lower and upper.
-        The method must return an array containing all the whole numbers between lower and upper,
-        including lower and upper. Example input and output:
-
-        Input  | Output
-        -------|-------
-        1, 3   | [1,2,3]
-        10, 13 | [10,11,12,13]
-        -1, 1  | [-1,0,1]
-     */
-
-
 
 
     /*
+            3. Construct an array of numbers
+            Create a method named constructNumberArray that accepts two whole numbers named lower and upper.
+            The method must return an array containing all the whole numbers between lower and upper,
+            including lower and upper. Example input and output:
+
+            Input  | Output
+            -------|-------
+            1, 3   | [1,2,3]
+            10, 13 | [10,11,12,13]
+            -1, 1  | [-1,0,1]
+         */
+
+
+        ;
+
+    @Override
+    public int[] constructNumberArray(int lower, int upper) {
+        int arraySize = upper - lower + 1;
+        int[] resultArray = new int[arraySize];
+
+        for (int i = 0; i < arraySize; i++) {
+            resultArray[i] = lower + i;
+        }
+        return resultArray;
+    }
+
+
+       /*
         4. Shout at a dev
         Create a method named shout that accepts a string and a whole number.
         The method must return the same string in upper case with exclamation marks (!) appended to the end.
@@ -81,7 +97,13 @@ public class Exercise extends ExerciseBase {
         error, 10   | ERROR!!!!!!!!!!
      */
 
+    public String shout(String w, int num) {
+        String s =  w.toUpperCase() ;
+        for (int i = 0; i < num; i++) {
+            s += "!";
+        }
+        return s;
+    }}
 
 
 
-}
