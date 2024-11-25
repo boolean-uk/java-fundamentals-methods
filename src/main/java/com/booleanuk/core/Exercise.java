@@ -1,6 +1,10 @@
 package com.booleanuk.core;
 
 import com.booleanuk.helpers.ExerciseBase;
+import java.util.stream.IntStream;
+
+import javax.xml.namespace.QName;
+import java.util.Arrays;
 
 public class Exercise extends ExerciseBase {
     /*
@@ -35,7 +39,7 @@ public class Exercise extends ExerciseBase {
         Complete this method so that it increases the number given by 1 and returns the result
      */
     public int increment(int number) {
-        return 0;
+        return number + 1;
     }
 
     /*
@@ -48,8 +52,8 @@ public class Exercise extends ExerciseBase {
         Nathan | Hi, Nathan :)
         Edward | Hi, Edward :)
      */
-    public String happilyGreet() {
-        return "Not implemented yet";
+    public String happilyGreet(String name) {
+        return "Hi, " + name + " :)";
     }
 
     /*
@@ -65,7 +69,9 @@ public class Exercise extends ExerciseBase {
         -1, 1  | [-1,0,1]
      */
 
-
+    public int[] constructNumberArray(int lower, int upper) {
+       return IntStream.range(lower, upper + 1).toArray();
+    }
 
 
     /*
@@ -81,7 +87,11 @@ public class Exercise extends ExerciseBase {
         error, 10   | ERROR!!!!!!!!!!
      */
 
-
+public String shout(String input, int numberOfExclamation) {
+    String inputUpperCase = input.toUpperCase();
+    String exclamationMarks = "!".repeat(numberOfExclamation);
+    return inputUpperCase + exclamationMarks;
+}
 
 
 }
