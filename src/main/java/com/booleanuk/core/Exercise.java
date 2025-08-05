@@ -2,6 +2,8 @@ package com.booleanuk.core;
 
 import com.booleanuk.helpers.ExerciseBase;
 
+import static java.lang.Math.abs;
+
 public class Exercise extends ExerciseBase {
     /*
         A method is a function, a single piece of logic that can run. In Java, a class is a convenient
@@ -35,7 +37,7 @@ public class Exercise extends ExerciseBase {
         Complete this method so that it increases the number given by 1 and returns the result
      */
     public int increment(int number) {
-        return 0;
+        return number+1;
     }
 
     /*
@@ -48,10 +50,9 @@ public class Exercise extends ExerciseBase {
         Nathan | Hi, Nathan :)
         Edward | Hi, Edward :)
      */
-    public String happilyGreet() {
-        return "Not implemented yet";
+    public String happilyGreet(String s1) {
+        return "Hi, "+s1+ " :)";
     }
-
     /*
         3. Construct an array of numbers
         Create a method named constructNumberArray that accepts two whole numbers named lower and upper.
@@ -65,6 +66,23 @@ public class Exercise extends ExerciseBase {
         -1, 1  | [-1,0,1]
      */
 
+    public int[] constructNumberArray(int num1, int num2) {
+        if (num1 > num2) {
+            int num3 = num2;
+            num2 =num1;
+            num1 = num3;
+
+        }
+        int diff = abs(num1 - num2) + 1;
+        int[] numbers = new int[diff];
+        int j = 0;
+        for(int i = num1; i<=num2;i++ ){
+            numbers[j] = i;
+            j++;
+        }
+
+        return numbers;
+    }
 
 
 
@@ -81,6 +99,21 @@ public class Exercise extends ExerciseBase {
         error, 10   | ERROR!!!!!!!!!!
      */
 
+
+    public String shout(String s1, int num2) {
+        s1 = s1.toUpperCase();
+        for (int i =0; i < num2; i++){
+            s1= s1+"!";
+        }
+        return s1;
+
+
+
+
+
+
+
+    }
 
 
 
