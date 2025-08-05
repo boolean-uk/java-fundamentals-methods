@@ -35,7 +35,7 @@ public class Exercise extends ExerciseBase {
         Complete this method so that it increases the number given by 1 and returns the result
      */
     public int increment(int number) {
-        return 0;
+        return number + 1;
     }
 
     /*
@@ -48,10 +48,20 @@ public class Exercise extends ExerciseBase {
         Nathan | Hi, Nathan :)
         Edward | Hi, Edward :)
      */
-    public String happilyGreet() {
-        return "Not implemented yet";
+    public String happilyGreet(String name) {
+        return "Hi, " + name + " :)";
     }
 
+
+    public int[] constructNumberArray(int lower, int upper) {
+        int[] res = new int[upper-lower+1];
+
+        for (int i = 0; i < res.length; i ++) {
+            res[i] = lower + i;
+        }
+
+        return res;
+    }
     /*
         3. Construct an array of numbers
         Create a method named constructNumberArray that accepts two whole numbers named lower and upper.
@@ -80,6 +90,14 @@ public class Exercise extends ExerciseBase {
         disaster, 5 | DISASTER!!!!!
         error, 10   | ERROR!!!!!!!!!!
      */
+
+    public String shout(String str, int n) {
+        String res = str.toUpperCase();
+        for (int i = 0; i < n; i ++) {
+            res += "!";
+        }
+        return res;
+    }
 
 
 
