@@ -10,6 +10,9 @@ public class Extension extends ExtensionBase {
      */
 
 
+    public int bakingTime(){
+        return 50;
+    }
 
 
     /*
@@ -20,7 +23,11 @@ public class Extension extends ExtensionBase {
         and the result of calling the bakingTime method
      */
 
+    public int remainingBakeTime(int done) {
 
+        int number = bakingTime() - done;
+        return number;
+    }
 
 
     /*
@@ -32,6 +39,10 @@ public class Extension extends ExtensionBase {
      */
 
 
+    public int calculatePrepTime(int layers){
+
+        return layers * 3;
+    }
 
 
     /*
@@ -45,6 +56,10 @@ public class Extension extends ExtensionBase {
      */
 
 
+    public int totalTimeSpent(int layers, int minutes){
+
+        return calculatePrepTime(layers) + minutes;
+    }
 
 
 }
